@@ -8,22 +8,26 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-	<modDependencies>
-		<li>
-			<packageId>Mlie.CoalExpanded</packageId>
-			<displayName>Coal Expanded (Continued)</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2560551007</steamWorkshopUrl>
-		</li>
-		<li>
-			<packageId>imranfish.xmlextensions</packageId>
-			<displayName>XML Extensions</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206</steamWorkshopUrl>
-		</li>
-	</modDependencies>
+    <modDependencies>
+        <li>
+            <packageId>Mlie.CoalExpanded</packageId>
+            <displayName>Coal Expanded (Continued)</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2560551007</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>imranfish.xmlextensions</packageId>
+            <displayName>XML Extensions</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206</steamWorkshopUrl>
+        </li>
+    </modDependencies>
     <loadAfter>
         <li>Mlie.CoalExpanded</li>
         <li>imranfish.xmlextensions</li>
     </loadAfter>
+    <loadBefore>
+        <!-- VGP patches FueledStove to add the CookingTools linkableFacilities, make sure Coal Expanded loads before that. -->
+        <li>dismarzero.VGP.VGPGardenGourmet</li>        
+    </loadBefore>
     <description>
 Increase the tree lifespans so that they don't die after just 2-3 years.    
     </description>
