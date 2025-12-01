@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- default for CoalSmelter is fuelConsumptionRate of 5, this makes it 4 -->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="NECCoalLamp"]/comps/li[@Class='CompProperties_Refuelable']/fuelConsumptionRate</xpath>
+        <value>4.0</value>
+    </Operation>
+
+    <!-- default for CoalGrill is fuelConsumptionRate of 5, this makes it 3 -->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="NECCoalLamp"]/comps/li[@Class='CompProperties_Refuelable']/fuelConsumptionRate</xpath>
+        <value>3.0</value>
+    </Operation>
+
+    <!-- default for NECCoalLamp (coal brazier) is fuelConsumptionRate of 1.0, this makes it 0.5 -->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="NECCoalLamp"]/comps/li[@Class='CompProperties_Refuelable']/fuelConsumptionRate</xpath>
+        <value>0.5</value>
+    </Operation>
+
+    <!-- default for NECActiveCooler is fuelConsumptionRate of 3, this makes it 2 -->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="NECActiveCooler"]/comps/li[@Class='CompProperties_Refuelable']/fuelConsumptionRate</xpath>
+        <value>2.0</value>
+    </Operation>
+
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="NECActiveCooler"]/description</xpath>
+        <value>Heats up liquid in a vacuum, the resulting gas absorbs heat and creates ice. Cools the room enough to keep spoilables fresh (+3C), but not frozen. Requires coal or charcoal refueling.</value>
+    </Operation>
+
+    <!-- default for CoalStove is fuelConsumptionRate of 4, this makes it 3 -->
+    <Operation Class="XmlExtensions.PatchOperationSafeAddOrReplace">
+        <xpath>Defs/ThingDef[defName="CoalStove"]/comps/li[@Class='CompProperties_Refuelable']/fuelConsumptionRate</xpath>
+        <value>3.0</value>
+    </Operation>
+
+</Patch>

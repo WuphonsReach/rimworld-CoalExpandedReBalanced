@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>wr.CoalExpandedReBalanced</packageId>
+    <modVersion>0.1</modVersion>
+    <name>Coal Expanded Re-Balanced</name>
+    <author>wuphonsreach</author>
+    <url>https://github.com/WuphonsReach/rimworld-CoalExpandedReBalanced</url>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Mlie.CoalExpanded</packageId>
+			<displayName>Coal Expanded (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2560551007</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+    <loadAfter>
+        <li>Mlie.CoalExpanded</li>
+        <li>imranfish.xmlextensions</li>
+    </loadAfter>
+    <description>
+Increase the tree lifespans so that they don't die after just 2-3 years.    
+    </description>
+</ModMetaData>
