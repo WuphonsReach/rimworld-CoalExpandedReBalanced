@@ -26,9 +26,14 @@
     </loadAfter>
     <loadBefore>
         <!-- VGP patches FueledStove to add the CookingTools linkableFacilities, make sure Coal Expanded loads before that. -->
+        <!-- 
+        note: This didn't work as planned.  I may have to manually add a patch to link the CoalGrill to CookingTools.
+        The problem likely lies in how the patch in VGPGardenGourmet was written.  It doesn't account for a missing 
+        parent node.
+        -->
         <li>dismarzero.VGP.VGPGardenGourmet</li>        
     </loadBefore>
     <description>
-Increase the tree lifespans so that they don't die after just 2-3 years.    
+Rebalance of the Coal Expanded mod by Neceross.    
     </description>
 </ModMetaData>
